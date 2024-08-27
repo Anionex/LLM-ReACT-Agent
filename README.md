@@ -20,4 +20,5 @@ SERPER_API_KEY=your_serper_api_key # 可选，用于谷歌搜索
 ```bash
 python react_agent.py
 ```
-
+如果有用，欢迎给仓库点个star🌟
+感谢该项目的启发：https://github.com/KMnO4-zx/TinyAgent
