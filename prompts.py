@@ -23,7 +23,7 @@ Begin!
 
 REACT_PROMPT = """You are a highly intelligent assistant tasked with solving the following problem:
 
-{question}
+{query}
 
 The user will provide you with an ongoing sequence of steps including Analysis, Tool Invocation, Tool Input, and Tool Output. Your job is to append the next appropriate step in the sequence based on the provided Tool Output. You should only add the next Analysis, Tool Invocation, or Tool Input as needed.
 
@@ -56,6 +56,7 @@ Tool Invocation: google_search
 - Only append the next step in the sequence.
 - Do not generate multiple steps at once.
 - Do not attempt to generate Tool Output yourself; this will be provided by the system.
+- use interleaving 'Analysis', 'Tool Invocation', and 'Tool Input' steps.
 
 ### Useful information:
 Knowledge cutoff: 2023-10
